@@ -7,17 +7,17 @@
     <title> @yield('title') </title>
     <meta name="twitter:title" content="Nepali Date Converter">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ asset('img/icon-main.png') }}">
+    <meta property="og:image" content="img/icon-main.png">
     <meta name="description"
         content="Convert BS to AD and AD to BS. With this tool you can easily convert AD to nepali date and nepali date to AD.">
     <meta property="og:type" content="website">
-    <meta name="twitter:image" content="/assets/img/icon-main.png">
+    <meta name="twitter:image" content="/img/icon-main.png">
     <meta name="twitter:description"
         content="Convert BS to AD and AD to BS. With this tool you can easily convert AD to nepali date and nepali date to AD.">
-    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('img/logopng-fav.png') }}">
-    <link rel="icon" type="image/png" sizes="512x512" href="{{ asset('img/logopng-fav.png') }}">
-    <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('bootstrap/css/styles.css') }}">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/logopng-fav.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/img/logopng-fav.png">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/styles.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
@@ -29,7 +29,7 @@
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}"><span
                     class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"
-                    style="background: transparent;"><img src="{{ asset('img/icon-main.png') }}" width="39"
+                    style="background: transparent;"><img src="/img/icon-main.png" width="39"
                         height="31"></span><span style="color: var(--ref-gray-700);">| Nepal Time</span></a><button
                 data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
                     class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -59,7 +59,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('js/script.min.js') }}"></script>
+    <script src="/js/script.min.js"></script>
     @stack('js')
 </body>
 
