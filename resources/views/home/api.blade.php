@@ -19,7 +19,7 @@
     <script>
         window.onload = () => {
             window.ui = SwaggerUIBundle({
-                url: '{{ asset('api/swagger.yaml') }}',
+                url: '/api/swagger.yaml',
                 dom_id: '#swagger-ui',
             });
         };
