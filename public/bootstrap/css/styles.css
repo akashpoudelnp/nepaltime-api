@@ -8,3 +8,18 @@
         width: 100%;
     }
 }
+
+.btn-primary {
+    background-color: teal;
+    border-color: rgb(2, 127, 127);
+}
+
+.btn-primary:hover {
+    background-color: rgb(38, 108, 108);
+    border-color: rgb(34, 125, 125);
+}
+
+.btn-primary:focus {
+    background-color: rgb(52, 143, 143);
+    border-color: rgb(34, 125, 125);
+}

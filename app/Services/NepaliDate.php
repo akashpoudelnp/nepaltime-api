@@ -137,7 +137,7 @@ class NepaliDate
     private $start_en = "1918";
     private $end_ne = "2095";
     private $end_en = "2038";
-    private $month_name = array('ब‌ैशाख', 'जेठ', 'असार', 'साउन', 'भदौ', 'असोज', 'कार्तिक', 'मङ्सिर', 'पुस', 'माघ', 'फाल्गुण', 'चैत');
+    public $month_name = array('ब‌ैशाख', 'जेठ', 'असार', 'साउन', 'भदौ', 'असोज', 'कार्तिक', 'मङ्सिर', 'पुस', 'माघ', 'फाल्गुण', 'चैत');
     private $day_name = array('आइतबार', 'सोमबार', 'मङ्गलबार', 'बुधबार', 'बिहिबार', 'शुक्रबार', 'शनिवार');
 
     private function get_week_ne($year, $month, $day)
@@ -262,7 +262,18 @@ class NepaliDate
         $d = date('d', time()); //Getting Day
         $date = new NepaliDate;
         $date = $date->get_nepali_date($y, $m, $d);
-        $returnData = array("m" => $date['M'], "d" => $date['d'], "y" => $date['y']);
+        $returnData = array("m" => $date['m'], "M" => $date['M'], "d" => $date['d'], "y" => $date['y']);
         return $returnData;
+    }
+    public static function getMonthsNepali()
+    {
+        $months = array('ब‌ैशाख', 'जेठ', 'असार', 'साउन', 'भदौ', 'असोज', 'कार्तिक', 'मङ्सिर', 'पुस', 'माघ', 'फाल्गुण', 'चैत');
+        return $months;
+    }
+
+    public static function getMonthsEnglish()
+    {
+        $months = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+        return $months;
     }
 }
