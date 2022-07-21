@@ -107,14 +107,14 @@
             if (val == 'bs2ad') {
                 $('#bs2ad').removeAttr('hidden');
                 $('#ad2bs').attr('hidden', '');
-                $('#result_ad2bs').attr('hidden', '');
-                $('#value_ad2bs').text("");
+                $('#result').attr('hidden', '');
+                $('#result_value').text("");
 
             } else {
                 $('#bs2ad').attr('hidden', '');
                 $('#ad2bs').removeAttr('hidden');
-                $('#result_bs2ad').attr('hidden', '');
-                $('#value_bs2ad').text("");
+                $('#result').attr('hidden', '');
+                $('#result_value').text("");
             }
         });
     </script>
