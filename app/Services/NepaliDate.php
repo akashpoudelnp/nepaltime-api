@@ -146,7 +146,7 @@ class NepaliDate
         return $this->day_name[JDDayOfWeek($jd, 0)];
     }
 
-    private function validate_ne($year, $month, $day)
+    public function validate_ne($year, $month, $day)
     {
         if (!array_key_exists($year, $this->nepali_length)) {
             return 'Invalid <b>Year</b> range';
@@ -159,7 +159,7 @@ class NepaliDate
         }
         return TRUE;
     }
-    private function validate_en($year, $month, $day)
+    public function validate_en($year, $month, $day)
     {
         if ($year < $this->start_en || $year > $this->end_en) {
             return 'Invalid Year Range';

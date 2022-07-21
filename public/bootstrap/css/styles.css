@@ -1,0 +1,10 @@
+/* on small screen change flex to column */
+@media (max-width: 576px) {
+    .docs {
+        flex-direction: column !important;
+    }
+
+    .links {
+        width: 100%;
+    }
+}

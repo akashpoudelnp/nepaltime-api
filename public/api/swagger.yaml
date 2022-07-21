@@ -1,0 +1,138 @@
+swagger: "2.0"
+tags:
+  - name: Today's Date
+  - name: Convert AD to BS
+  - name: Convert BS to AD
+paths:
+  /api/v1/today:
+    get:
+      tags:
+      - Today's Date
+      summary: Today's Nepali Date
+      description: Provides today's Nepali Date.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: object
+            properties:
+              m:
+                  type: string
+                  description: Nepali Month
+                  example: "साउन"
+              d:
+                type: integer
+                description: Nepali Day
+                example: 12
+              y:
+                type: integer
+                description: Nepali Year
+                example: 2075
+  /api/v1/convert/bstoad:
+    get:
+      tags:
+      - Convert BS to AD
+      summary: Convert BS to AD
+      description: Converts Bikram Sambat to AD.
+      produces:
+      - application/json
+      parameters:
+      - name: day
+        in: query
+        description: Day
+        required: true
+        type: integer
+        example: "12"
+      - name: month
+        in: query
+        description: Month
+        required: true
+        type: integer
+        example: "4"
+      - name: year
+        in: query
+        description: Year
+        required: true
+        type: integer
+        example: "2075"
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: object
+            properties:
+              y:
+                type: integer
+                description: Year
+                example: 2022
+              m:
+                type: integer
+                description: Month in Number
+                example: 3
+              M:
+                type: string
+                description: Month in words
+                example: Mar
+              d:
+                type: integer
+                description: Day
+                example: 12
+              l:
+                type: string
+                description: Day of the week
+                example: "Tuesday"
+  /api/v1/convert/adtobs:
+    get:
+      tags:
+      - Convert AD to BS
+      summary: Convert AD to BS
+      description: Converts AD to Bikram Sambat.
+      produces:
+      - application/json
+      parameters:
+      - name: day
+        in: query
+        description: Day
+        required: true
+        type: integer
+        example: "12"
+      - name: month
+        in: query
+        description: Month
+        required: true
+        type: integer
+        example: "4"
+      - name: year
+        in: query
+        description: Year
+        required: true
+        type: integer
+        example: "2022"
+      responses:
+        "200":
+          description: Success
+          schema:
+            type: object
+            properties:
+              y:
+                type: integer
+                description: Nepali Year
+                example: 2075
+              m:
+                type: integer
+                description: Nepali Month in Number
+                example: 12
+              M:
+                type: string
+                description: Nepali Month in words
+                example: साउन
+              d:
+                type: integer
+                description: Nepali Day
+                example: 12
+              l:
+                type: string
+                description: Day of the week in Nepali
+                example: "शुक्रबार"
