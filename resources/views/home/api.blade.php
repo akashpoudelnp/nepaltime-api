@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title', 'Nepal Time API')
 @push('seo')
-    <meta name="title" content="Nepali Date Converter API">
+    <meta name="title" content="Nepali Date Converter API Tool">
     <meta name="description" content="Nepali Date Converter API, API to convert nepali date.">
 @endpush
 @section('content')
