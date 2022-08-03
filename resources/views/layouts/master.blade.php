@@ -8,8 +8,7 @@
     <meta name="twitter:title" content="Nepali Date Converter">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="img/icon-main.png">
-    <meta name="description"
-        content="Convert BS to AD and AD to BS. With this tool you can easily convert AD to nepali date and nepali date to AD.">
+    @stack('seo')
     <meta property="og:type" content="website">
     <meta name="twitter:image" content="/img/icon-main.png">
     <meta name="twitter:description"

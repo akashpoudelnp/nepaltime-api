@@ -1,5 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Nepal Time API')
+@push('seo')
+    <meta name="title" content="Nepali Date Converter Online | Convert Date Online">
+    <meta name="description"
+        content=" Convert BS to AD online.Convert AD to BS online. Convert nepali date to english AD format. You can easily convert nepali date to english AD and english AD to nepali Bikram Sambat.">
+@endpush
+
 @section('content')
     <section class="py-5 mt-5">
         <div class="container py-5">
@@ -90,7 +96,7 @@
                     <div class="spinner-border" style="color:teal;" role="status">
                     </div>
                 </div>
-                <div id="result" hidden>
+                <div id="result" class="border" hidden>
                     <p class="text-primary text-center mt-4">Converted Date</p>
                     <h3 class="text-center  mb-2" id="result_value"></h3>
                 </div>
