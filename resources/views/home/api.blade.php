@@ -1,5 +1,9 @@
 @extends('layouts.master')
 @section('title', 'Nepal Time API')
+@push('seo')
+    <meta name="title" content="Nepali Date Converter API">
+    <meta name="description" content="Nepali Date Converter API, API to convert nepali date.">
+@endpush
 @section('content')
     <section class="py-5 mt-5">
         <div class="container py-5">
